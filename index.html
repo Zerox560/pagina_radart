@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radart</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="bar">
+                <a href="index.html" class="logo">
+                    <img src="./img/logo3.png" />
+                    <h1 class="logo__nombre no-margin center-texto">RAD
+                        <span class="logo__bold">ART </span>
+                    </h1>
+                </a>
+                <nav class="navigation">
+                    <a href="#descubre" class="navigation__link">DESCUBRE</a>
+                    <a href="#app" class="navigation__link">APP</a>
+                    <a href="#registrate" class="navigation__link">REGISTRATE</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;"
+            data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+            <section class="slider">
+                <div class="slider__circle">
+                    <img src="./img/marie.jpg" />
+                </div>
+                <div class="slider__container">
+                    <p class="slider__container-text">Marie Rossman</p>
+                </div>
+                <picture class="slider__image-container">
+                    <source srcset="./img/rino.jpg" type="image/webp">
+                    <img loading="lazy" src="./img/rino.jpg" alt="Graffiti de un rinoceronte">
+                </picture>
+            </section>
+        </div>
+
+        <section class="descubre" id="descubre" data-600-top-top="opacity: 0;" data-100-top-top="opacity: 1;">
+            <header class="header">
+                <h3>DESCUBRE</h3>
+            </header>
+            <div class="descubre__container">
+                <video class="descubre__video" poster="./img/grupo.jpg" controls>
+                    <source src="./img/grafiti.mp4" type="video/mp4" />
+                </video>
+                <div class="descubre__texto">
+                    <h3>DESCUBRE TU MURAL</h3>
+                    <p>
+                        Con Radart, Decubre tu mural,
+                        súmate a la cultura del arte
+                        urbano al estilo del siglo XXI, con
+                        Radart puedes obtener la información de los murales de tu
+                        interes, así como del creador de la
+                        misma, desde los más conocidos,
+                        hasta principiantes de todo el
+                        mundo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="app" id="app" data-600-top-top="opacity: 0;" data-100-top-top="opacity: 1;">
+            <header class="header">
+                <h3>APP</h3>
+            </header>
+            <div class="app__images">
+                <picture class="app__images-image">
+                    <source srcset="./img/app3.jpeg" type="image/webp">
+                    <img loading="lazy" src="./img/rino.jpg" alt="Graffiti de un rinoceronte">
+                </picture>
+                <picture class="app__images-image">
+                    <source srcset="./img/app2.jpeg" type="image/webp">
+                    <img loading="lazy" src="./img/rino.jpg" alt="Graffiti de un rinoceronte">
+                </picture>
+                <picture class="app__images-image">
+                    <source srcset="./img/app1.jpeg" type="image/webp">
+                    <img loading="lazy" src="./img/rino.jpg" alt="Graffiti de un rinoceronte">
+                </picture>
+            </div>
+        </section>
+
+        <section class="registrate" id="registrate" data-600-top-top="opacity: 0;" data-100-top-top="opacity: 1;">
+            <header class="header">
+                <h3>REGISTRATE</h3>
+            </header>
+            <div class="form_container">
+                <form class="form" action="mailto:crisbell.vasquez@davinci.edu.ar" method="post" enctype="text/plain">
+                    <div class="form__inputs">
+                        <input name="nombre" type="text" placeholder="NOMBRE" required />
+                        <input name="email" type="email" placeholder="EMAIL" required />
+                        <input name="password" type="password" placeholder="PASSWORD" required />
+                        <button type="submit">SIGUIENTE</button>
+                    </div>
+                    <!--                 <div class="logos">
+                        <img src="./img/itunes-logo.png" />
+                        <img src="./img/play-store.png" />
+                    </div> -->
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>CRISBELL VASQUEZ DMT2A -DISENO MULTIMEDIAL 2019</p>
+            <div class="social_logos"> 
+                <img src="./img/facebook.png" width="40px" />
+                <img src="./img/instagram.png" width="40px" />
+            </div>
+        </footer>
+
+    </main>
+
+    <script type="text/javascript" src="./js/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+
+</html>
